@@ -15,6 +15,13 @@ FlowRouter.route('/list', {
   },
 });
 
+FlowRouter.route('/botanodex', {
+  name: 'Botanodex_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Botanodex_Page' });
+  },
+});
+
 FlowRouter.route('/add', {
   name: 'Add_Stuff_Page',
   action() {
