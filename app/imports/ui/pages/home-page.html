@@ -3,20 +3,18 @@
   <head>
     <title>Botaniary Home</title>
 
-    <link rel="stylesheet" href="style.css"/>
-
   </head>
 
-  <body>
+  <body style="padding-top: 0px">
 
-  <div class="ui borderless topmenu menu" style="padding-top: 40px; background-color: darkgray; margin-bottom: 0px">
+  <div class="ui borderless topmenu menu" style="background-color: darkgray; margin-bottom: 0px; padding-top: 0px; margin-top: 0px">
     <div class="ui container">
 
       <!-- Need to get rid of thin line under img -->
-      <a href="https://manoa.hawaii.edu/"><img style="padding-top: 20px" class="ui fluid image" src="http://manoa.hawaii.edu/images/template_images/header_fg.jpg"></a>
+      <a href="https://manoa.hawaii.edu/"><img class="ui fluid image" src="http://manoa.hawaii.edu/images/template_images/header_fg.jpg"></a>
 
       <a href="login.html" class="right item">Login</a>
-      <a href="user-home.html" class="item">User Home</a>
+      <a href="{{pathFor 'User_Home_Page'}}" class="item">User Home</a>
       <a href="{{pathFor 'Botanodex_Page'}}" class="item" >Botanodex</a>
       <a href="top-scores.html" class="item">Top Scores</a>
       <a class="item">Search</a>
