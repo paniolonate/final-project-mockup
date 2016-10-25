@@ -4,6 +4,6 @@ Home Page 1
 Home Page 2
 <img class="ui fluid image" src="https://github.com/paniolonate/final-project-mockup/blob/master/doc/home-page-2.PNG">
 User Home Page
-<img class="ui fluid image" src="https://github.com/paniolonate/final-project-mockup/blob/master/doc/.PNG">
+<img class="ui fluid image" src="https://github.com/paniolonate/final-project-mockup/blob/master/doc/userHomeScreen.PNG">
 Botanodex Page
-<img class="ui fluid image" src="https://github.com/paniolonate/final-project-mockup/blob/master/doc/home-page-2.PNG">
+<img class="ui fluid image" src="https://github.com/paniolonate/final-project-mockup/blob/master/doc/botanodexScreen.PNG">
