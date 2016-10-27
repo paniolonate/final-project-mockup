@@ -5,28 +5,102 @@
 
   </head>
 
-  <body>
+  <body style="padding-top: 0px">
 
-  <h1 style="padding-top: 20px" class="ui header">
-    <img src="https://www.thechildcaresquare.com/images_child/home.png">
-    User Home
-  </h1>
+  <div class="ui borderless topmenu menu"
+       style="background-color: darkgray; margin-bottom: 0px; padding-top: 0px; margin-top: 0px">
+    <div class="ui container">
 
-  <div class="ui form">
-    <div class="three fields">
-      <div class="field">
-        <label>Scientific Name</label>
-        <input type="text" placeholder="Scientific Name">
-      </div>
-      <div class="field">
-        <label>Location</label>
-        <input type="text" placeholder="Location">
-      </div>
-      <div class="field">
-        <label>Uses</label>
-        <input type="text" placeholder="Uses">
+      <!-- Need to get rid of thin line under img -->
+      <a href="https://manoa.hawaii.edu/"><img style="padding-left: 0px" class="ui left fluid image"
+                                               src="http://manoa.hawaii.edu/images/template_images/header_fg.jpg"></a>
+
+      <a href="{{pathFor 'User_Home_Page'}}" class="right item">User Home</a>
+      <a href="{{pathFor 'Botanodex_Page'}}" class="item">Botanodex</a>
+      <a href="top-scores.html" class="item">Top Scores</a>
+      <a class="item">Search</a>
+      <a class="item"><i class="ui search icon"></i></a>
+      <a class="item">Contact</a>
+
+    </div>
+  </div>
+
+  <div class="ui container">
+    <h1 style="padding-top: 20px" class="ui header">
+      <img src="https://www.thechildcaresquare.com/images_child/home.png">
+      User Home
+    </h1>
+
+    <div class="ui form">
+      <div class="three fields">
+        <div class="field">
+          <label>Predicted Plant Name</label>
+          <input type="text" placeholder="I hope you're right!">
+        </div>
+        <div class="field">
+          <label>Condition</label>
+          <input type="text" placeholder="Healthy? Needs aloha?">
+        </div>
+        <div class="field">
+          <label>Upload Photo</label>
+          <input type="text" placeholder="In case you were wrong...">
+          <button style="margin-top: 10px" class="ui right floated primary button">
+            Upload
+          </button>
+          <button style="margin-top: 10px; margin-right: 10px" class="ui right floated button">
+            Browse
+          </button>
+        </div>
       </div>
     </div>
+
+    <img class="ui fluid image" src="http://www.hawaii.edu/nso/resources/uhmap.jpg">
+
+    <div style="background-color: darkgray" class="footer-background">
+      <div class="ui three column grid container">
+
+        <div class="column">
+          ABOUT
+          <div class="ui list">
+            <div class="item">
+              Botaniary’s base functionality is a plant field guide and map, integrating the map and underlying dataset
+              on
+              the landscaping section of the manoa.hawaii.edu website.
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          CONNECT WITH US
+          <hr/>
+          <a class="fitted item"><i class="circular inverted grey mail icon"></i></a>
+
+          <a class="fitted item"><i class="circular inverted grey facebook icon"></i></a>
+
+          <a class="fitted item"><i class="circular inverted grey instagram icon"></i></a>
+
+
+          <a class="fitted item"><i class="circular inverted grey twitter icon"></i></a>
+        </div>
+
+        <div class="column">
+          CONTACT
+          <hr/>
+          <div class="ui list">
+
+            <div class="item">Botaniary Team</div>
+
+            <div class="item">(808)956-4000</div>
+
+            <div class="item">botaniary@hawaii.edu</div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 
   </body>

@@ -18,3 +18,6 @@ import './botanodex.js';
 
 import './top-scores.html';
 
+import './nioi.html';
+
+

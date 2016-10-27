@@ -1,28 +1,160 @@
 <template name="Botanodex_Page">
 
-  <h1 class="ui header">
-    <img src="https://image.freepik.com/free-icon/books-stack-of-three_318-45543.jpg" class="ui tiny circular image">
-    Botanodex
-  </h1>
+  <div class="ui borderless topmenu menu"
+       style="background-color: darkgray; margin-bottom: 0px; padding-top: 0px; margin-top: 0px">
+    <div class="ui container">
 
-  <div class="ui middle aligned animated list">
-    <div class="item">
-      <img class="ui avatar image" src="https://rebekahstudio.files.wordpress.com/2011/07/lauae-patch-c2a9-2011-rebekah-luke.jpg?w=510">
-      <div class="content">
-        <div class="header">Laua'e</div>
+      <!-- Need to get rid of thin line under img -->
+      <a href="https://manoa.hawaii.edu/"><img style="padding-left: 0px" class="ui fluid image"
+                                               src="http://manoa.hawaii.edu/images/template_images/header_fg.jpg"></a>
+
+      <a href="{{pathFor 'User_Home_Page'}}" class="right item">User Home</a>
+      <a href="{{pathFor 'Botanodex_Page'}}" class="item">Botanodex</a>
+      <a href="top-scores.html" class="item">Top Scores</a>
+      <a class="item">Search</a>
+      <a class="item"><i class="ui search icon"></i></a>
+      <a class="item">Contact</a>
+
+    </div>
+  </div>
+
+  <div class="ui container">
+    <h1 class="ui header">
+      <img src="https://image.freepik.com/free-icon/books-stack-of-three_318-45543.jpg" class="ui tiny circular image">
+      Botanodex
+    </h1>
+
+    <div class="ui three column grid">
+      <div class="row">
+
+        <div class="column"> <!-- 1st column -->
+          <div class="ui middle aligned animated list">
+            <div class="item">
+              <img class="ui avatar image"
+                   src="https://rebekahstudio.files.wordpress.com/2011/07/lauae-patch-c2a9-2011-rebekah-luke.jpg?w=510">
+              <div class="content">
+                <div class="header">Laua'e</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image"
+                   src="http://rlv.zcache.com/ohia_lehua_card-rf84905d89be84261adbcf26e1743e956_xvuat_8byvr_324.jpg">
+              <div class="content">
+                <div class="header">Ohi'a Lehua</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image"
+                   src="http://ww3.hdnux.com/photos/07/70/24/2065674/3/square_gallery_thumb.jpg">
+              <div class="content">
+                <div class="header">Kukui</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column"> <!-- 2nd column -->
+          <div class="ui middle aligned animated list">
+              <div class="item">
+                <img class="ui avatar image"
+                     src="https://rebekahstudio.files.wordpress.com/2011/07/lauae-patch-c2a9-2011-rebekah-luke.jpg?w=510">
+                <div class="content">
+                  <a href="{{pathFor 'Nioi_Page'}}"><div class="header">Ni'oi</div></a>
+                </div>
+              </div>
+            <div class="item">
+              <img class="ui avatar image"
+                   src="http://rlv.zcache.com/ohia_lehua_card-rf84905d89be84261adbcf26e1743e956_xvuat_8byvr_324.jpg">
+              <div class="content">
+                <div class="header">Pohinahina</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image"
+                   src="http://ww3.hdnux.com/photos/07/70/24/2065674/3/square_gallery_thumb.jpg">
+              <div class="content">
+                <div class="header">Ohi'a 'ai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column"> <!-- 3rd column -->
+          <div class="ui middle aligned animated list">
+            <div class="item">
+              <img class="ui avatar image"
+                   src="https://rebekahstudio.files.wordpress.com/2011/07/lauae-patch-c2a9-2011-rebekah-luke.jpg?w=510">
+              <div class="content">
+                <div class="header">'A'ali'i</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image"
+                   src="http://rlv.zcache.com/ohia_lehua_card-rf84905d89be84261adbcf26e1743e956_xvuat_8byvr_324.jpg">
+              <div class="content">
+                <div class="header">Noni</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image"
+                   src="http://ww3.hdnux.com/photos/07/70/24/2065674/3/square_gallery_thumb.jpg">
+              <div class="content">
+                <div class="header">'Uala</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="item">
-      <img class="ui avatar image" src="http://rlv.zcache.com/ohia_lehua_card-rf84905d89be84261adbcf26e1743e956_xvuat_8byvr_324.jpg">
-      <div class="content">
-        <div class="header">Ohi'a Lehua</div>
+
+    <img style="padding-top: 20px" class="ui fluid image"
+         src="https://images.unsplash.com/photo-1444798314188-37dfab92dfa2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=1877864ed806791fc3cd2567fa635e50">
+
+    <div style="background-color: darkgray" class="footer-background">
+      <div class="ui three column grid container">
+
+        <div class="column">
+          ABOUT
+          <div class="ui list">
+            <div class="item">
+              Botaniary’s base functionality is a plant field guide and map, integrating the map and underlying dataset
+              on
+              the landscaping section of the manoa.hawaii.edu website.
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          CONNECT WITH US
+          <hr/>
+          <a class="fitted item"><i class="circular inverted grey mail icon"></i></a>
+
+          <a class="fitted item"><i class="circular inverted grey facebook icon"></i></a>
+
+          <a class="fitted item"><i class="circular inverted grey instagram icon"></i></a>
+
+
+          <a class="fitted item"><i class="circular inverted grey twitter icon"></i></a>
+        </div>
+
+        <div class="column">
+          CONTACT
+          <hr/>
+          <div class="ui list">
+
+            <div class="item">Botaniary Team</div>
+
+            <div class="item">(808)956-4000</div>
+
+            <div class="item">botaniary@hawaii.edu</div>
+
+
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="item">
-      <img class="ui avatar image" src="http://ww3.hdnux.com/photos/07/70/24/2065674/3/square_gallery_thumb.jpg">
-      <div class="content">
-        <div class="header">Kukui</div>
-      </div>
-    </div>
+
   </div>
 </template>

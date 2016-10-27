@@ -22,6 +22,13 @@ FlowRouter.route('/botanodex', {
   },
 });
 
+FlowRouter.route('/nioi', {
+  name: 'Nioi_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Nioi_Page' });
+  },
+});
+
 FlowRouter.route('/user-home', {
   name: 'User_Home_Page',
   action() {
